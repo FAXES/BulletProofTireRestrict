@@ -18,7 +18,7 @@ end
 Citizen.CreateThread(function()
     while true do
         Citizen.Wait(500)
-        local ped = GetPlayerPed(-1)
+        local ped = PlayerPedid()
         local veh = GetVehiclePedIsUsing(ped)
         
         if IsPedInAnyVehicle(ped, false) then
